@@ -1,0 +1,10 @@
+/node_modules
+/Gemfile.lock
+/.targets
+/_build
+/env
+/envs
+/htdocs/components
+/dist
+/coverage
+.DS_Store

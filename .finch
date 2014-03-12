@@ -1,0 +1,5 @@
+[project]
+	name = angular-variants
+	type = javascript-lib
+[node]
+	version = 0.10.4
