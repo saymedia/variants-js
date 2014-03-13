@@ -175,6 +175,25 @@ The following will apply the variant if the user is jdoe AND is in group1.
       }
     ]
 
+## URL OVERRIDES
+
+You can also enable a particular variant by passing the variant name in the url.
+This is disabled by default, and must be enabled per variant by setting
+'allowUrlOverrides' to true.
+
+    variants: [
+      {
+        id: 'my-test',
+        allowUrlOverrides: true,
+        ...
+      }
+    ]
+
+Once this is set, you can enable one or more variants by passing a comma-separated
+list in the url, under the "variants" param:
+
+    http://www.mydomain.com/myapp?variants=my-test,my-other-test
+
 ## MODS
 
 A variant is applied using dependency injection, replacing a particular service or
